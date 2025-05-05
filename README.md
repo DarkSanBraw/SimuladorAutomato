@@ -34,3 +34,28 @@ Arquivo JSON com a definição do autômato:
     "q2": { "a": "q1", "b": "q0" }    
   }
 }
+```
+## 📄 Exemplo: testes.in
+Arquivo CSV com as palavras de teste e os resultados esperados:
+```
+feijao
+ab;1
+aa;0
+abb;1
+bbbb;0
+```
+Onde:
+
+ab → deve ser aceita (1)
+
+aa → deve ser rejeitada (0)
+
+## 📄 Exemplo gerado: saida.out
+O programa gera este arquivo:
+```
+ab;1;1;0ms
+aa;0;0;0ms
+abb;1;1;0ms
+bbbb;0;0;1ms
+```
+palavra, esperado, obtido, tempo de execução,
