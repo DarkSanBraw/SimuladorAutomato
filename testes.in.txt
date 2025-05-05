@@ -1,0 +1,4 @@
+ab;1
+aa;0
+abb;1
+bbbb;0
